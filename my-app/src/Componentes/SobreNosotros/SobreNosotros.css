@@ -27,6 +27,7 @@
   border: 1px solid var(--border);
   border-radius: var(--r-md);
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .stat {
@@ -41,15 +42,15 @@
 
 .stat__num {
   display: block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 900;
-  color: var(--celeste);
+  color: var(--azul-principal);
   line-height: 1;
   margin-bottom: 4px;
 }
 
 .stat__label {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -63,11 +64,12 @@
 
 .sobre__card {
   background: var(--bg-card);
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border);
   border-radius: var(--r-lg);
   padding: 32px;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 /* Blue top border accent */
@@ -84,7 +86,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--celeste);
+  color: var(--naranja);
   margin-bottom: 20px;
 }
 
@@ -107,7 +109,7 @@
 
 .sobre__card-list li::before {
   content: '▸';
-  color: var(--celeste);
+  color: var(--azul-principal);
   font-size: 0.7rem;
   margin-top: 3px;
   flex-shrink: 0;
@@ -117,7 +119,7 @@
   .sobre { grid-template-columns: 1fr; gap: 40px; }
 }
 @media (max-width: 560px) {
-  .stats { flex-direction: column; }
-  .stat  { border-right: none; border-bottom: 1px solid var(--border); }
-  .stat:last-child { border-bottom: none; }
+  .stats { flex-wrap: wrap; }
+  .stat  { flex: 1 1 45%; border-right: 1px solid var(--border); }
+  .stat:nth-child(even) { border-right: none; }
 }

@@ -22,7 +22,7 @@
   margin-bottom: 6px;
 }
 
-.footer__marca-paw { color: var(--celeste); display: flex; }
+.footer__marca-paw { color: var(--naranja); display: flex; }
 
 .footer__divider {
   width: 48px;
@@ -42,6 +42,6 @@
 .footer__sub {
   font-size: 0.72rem;
   color: var(--text-muted);
-  opacity: 0.55;
+  opacity: 0.7;
   font-weight: 500;
 }

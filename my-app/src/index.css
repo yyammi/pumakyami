@@ -7,7 +7,7 @@
 }
 
 /* ═══════════════════════════════════════════
-   PUMAKYAMI — DESIGN TOKENS
+   PUMAKYAMI — DESIGN TOKENS (TEMA CLARO)
    ═══════════════════════════════════════════ */
 :root {
   /* ── Paleta de marca ── */
@@ -15,37 +15,35 @@
   --celeste:        #009CDF;        /* RGB: 0, 156, 223  */
   --naranja:        #CF661B;        /* RGB: 207, 102, 27 */
 
-  /* ── Alias semánticos (compatibilidad) ── */
+  /* ── Alias semánticos ── */
   --ochre:          var(--azul-principal);
-  --ochre-dark:     #0d5490;
-  --ochre-deeper:   #094070;
   --amber:          var(--celeste);
-  --amber-dark:     #007ab8;
   --yellow-cta:     var(--celeste);
   --orange-cta:     var(--naranja);
 
-  /* ── Fondos ── */
-  --bg-page:        #060c14;        /* azul casi negro */
-  --bg-section:     #0a1624;        /* sección alternada */
-  --bg-card:        #0e1e30;        /* cards */
-  --bg-card-hover:  #122540;
-  --bg-overlay:     rgba(6,12,20,0.90);
+  /* ── Fondos (TEMA CLARO) ── */
+  --bg-page:        #ffffff;
+  --bg-section:     #f4f8fc;        /* azul muy pálido */
+  --bg-card:        #ffffff;
+  --bg-card-hover:  #eef5fb;
+  --bg-overlay:     rgba(6,12,20,0.78);
 
   /* ── Texto ── */
-  --text-primary:   #ffffff;
-  --text-secondary: #c8ddef;
-  --text-muted:     #6e8fa8;
-  --text-on-ochre:  #ffffff;
+  --text-primary:   #0d1f30;        /* azul muy oscuro */
+  --text-secondary: #2c4a63;
+  --text-muted:     #6b8fa8;
+  --text-on-dark:   #ffffff;
 
   /* ── Bordes ── */
-  --border:         rgba(18,105,175,0.28);
-  --border-strong:  rgba(0,156,223,0.50);
+  --border:         rgba(18,105,175,0.14);
+  --border-strong:  rgba(0,156,223,0.35);
 
   /* ── Sombras / glows ── */
-  --glow-amber:     0 0 32px rgba(0,156,223,0.30);
-  --glow-yellow:    0 0 24px rgba(0,156,223,0.40);
-  --glow-naranja:   0 0 28px rgba(207,102,27,0.35);
-  --shadow-card:    0 8px 40px rgba(0,0,0,0.6);
+  --glow-amber:     0 4px 24px rgba(0,156,223,0.18);
+  --glow-yellow:    0 4px 24px rgba(0,156,223,0.28);
+  --glow-naranja:   0 4px 24px rgba(207,102,27,0.22);
+  --shadow-card:    0 2px 20px rgba(18,105,175,0.10);
+  --shadow-card-hover: 0 8px 36px rgba(18,105,175,0.18);
 
   /* ── Radios ── */
   --r-sm:   4px;
@@ -77,7 +75,7 @@ img { display: block; max-width: 100%; }
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-track { background: var(--bg-section); }
 ::-webkit-scrollbar-thumb { background: var(--azul-principal); border-radius: 3px; }
 
 /* ── Utilidades de texto ── */
@@ -112,7 +110,7 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--celeste);
+  color: var(--naranja);
   margin-bottom: 14px;
 }
 
@@ -127,7 +125,7 @@ img { display: block; max-width: 100%; }
 }
 
 .section-title span {
-  color: var(--celeste);
+  color: var(--azul-principal);
 }
 
 .section-body {
