@@ -30,15 +30,15 @@ function SobreNosotros() {
             {/* ── Stats ── */}
             <div className="stats">
               <div className="stat">
-                <span className="stat__num">+20</span>
+                <span className="stat__num">+30</span>
                 <span className="stat__label">Años de trayectoria</span>
               </div>
               <div className="stat">
-                <span className="stat__num">+80</span>
+                <span className="stat__num">+300</span>
                 <span className="stat__label">Voluntarios</span>
               </div>
               <div className="stat">
-                <span className="stat__num">+350</span>
+                <span className="stat__num">+1.000</span>
                 <span className="stat__label">Animales rescatados</span>
               </div>
               <div className="stat">
