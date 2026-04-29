@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './index.css';
+import './App.css';
 
 import Navbar               from './Componentes/Navbar/Navbar';
 import Hero                 from './Componentes/Hero/Hero';
@@ -38,8 +39,19 @@ function App() {
 
       <main>
         <Hero />
-        <SobreNosotros />
-        <RegistrarAvistamiento onUpload={handleUpload} cargando={cargando} />
+
+        {/* ── Layout de dos columnas ── */}
+        <div className="layout-dos-columnas">
+          {/* Columna izquierda: scrollable */}
+          <div className="col-contenido">
+            <SobreNosotros />
+          </div>
+
+          {/* Columna derecha: sticky — siempre visible */}
+          <aside className="col-sticky">
+            <RegistrarAvistamiento onUpload={handleUpload} cargando={cargando} />
+          </aside>
+        </div>
       </main>
 
       <Footer />

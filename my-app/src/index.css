@@ -7,38 +7,44 @@
 }
 
 /* ═══════════════════════════════════════════
-   PUMAKAWA-INSPIRED DESIGN TOKENS
+   PUMAKYAMI — DESIGN TOKENS
    ═══════════════════════════════════════════ */
 :root {
-  /* ── Paleta de color ── */
-  --ochre:          #cca000;        /* fondo principal PUMAKAWA */
-  --ochre-dark:     #a67c00;        /* botón secundario */
-  --ochre-deeper:   #7a5a00;        /* hover profundo */
-  --amber:          #e69138;        /* acento naranja/ámbar */
-  --amber-dark:     #c97820;
-  --yellow-cta:     #f1c40f;        /* CTA primario brillante */
-  --orange-cta:     #e67e22;        /* CTA terciario */
+  /* ── Paleta de marca ── */
+  --azul-principal: #1269AF;        /* RGB: 18, 105, 175 */
+  --celeste:        #009CDF;        /* RGB: 0, 156, 223  */
+  --naranja:        #CF661B;        /* RGB: 207, 102, 27 */
+
+  /* ── Alias semánticos (compatibilidad) ── */
+  --ochre:          var(--azul-principal);
+  --ochre-dark:     #0d5490;
+  --ochre-deeper:   #094070;
+  --amber:          var(--celeste);
+  --amber-dark:     #007ab8;
+  --yellow-cta:     var(--celeste);
+  --orange-cta:     var(--naranja);
 
   /* ── Fondos ── */
-  --bg-page:        #0f0c07;        /* negro cálido */
-  --bg-section:     #1a1507;        /* sección alternada oscura */
-  --bg-card:        #231c09;        /* cards */
-  --bg-card-hover:  #2e240d;
-  --bg-overlay:     rgba(15,12,7,0.88);
+  --bg-page:        #060c14;        /* azul casi negro */
+  --bg-section:     #0a1624;        /* sección alternada */
+  --bg-card:        #0e1e30;        /* cards */
+  --bg-card-hover:  #122540;
+  --bg-overlay:     rgba(6,12,20,0.90);
 
   /* ── Texto ── */
   --text-primary:   #ffffff;
-  --text-secondary: #e8dfc8;
-  --text-muted:     #9a8c6e;
+  --text-secondary: #c8ddef;
+  --text-muted:     #6e8fa8;
   --text-on-ochre:  #ffffff;
 
   /* ── Bordes ── */
-  --border:         rgba(204,160,0,0.22);
-  --border-strong:  rgba(230,145,56,0.45);
+  --border:         rgba(18,105,175,0.28);
+  --border-strong:  rgba(0,156,223,0.50);
 
-  /* ── Sombras ── */
-  --glow-amber:     0 0 32px rgba(230,145,56,0.28);
-  --glow-yellow:    0 0 24px rgba(241,196,15,0.35);
+  /* ── Sombras / glows ── */
+  --glow-amber:     0 0 32px rgba(0,156,223,0.30);
+  --glow-yellow:    0 0 24px rgba(0,156,223,0.40);
+  --glow-naranja:   0 0 28px rgba(207,102,27,0.35);
   --shadow-card:    0 8px 40px rgba(0,0,0,0.6);
 
   /* ── Radios ── */
@@ -72,12 +78,15 @@ img { display: block; max-width: 100%; }
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-page); }
-::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--azul-principal); border-radius: 3px; }
 
 /* ── Utilidades de texto ── */
-.text-ochre   { color: var(--ochre); }
-.text-amber   { color: var(--amber); }
-.text-yellow  { color: var(--yellow-cta); }
+.text-azul    { color: var(--azul-principal); }
+.text-celeste { color: var(--celeste); }
+.text-naranja { color: var(--naranja); }
+.text-ochre   { color: var(--azul-principal); }
+.text-amber   { color: var(--celeste); }
+.text-yellow  { color: var(--celeste); }
 .text-muted   { color: var(--text-muted); }
 
 /* ── Sección base ── */
@@ -103,7 +112,7 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--celeste);
   margin-bottom: 14px;
 }
 
@@ -118,7 +127,7 @@ img { display: block; max-width: 100%; }
 }
 
 .section-title span {
-  color: var(--yellow-cta);
+  color: var(--celeste);
 }
 
 .section-body {

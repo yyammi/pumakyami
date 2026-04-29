@@ -1,5 +1,58 @@
-/* App.css — vacío intencionalmente.
-   Cada componente maneja sus propios estilos
-   en su carpeta correspondiente dentro de /Componentes.
-   Los tokens globales están en index.css.
-*/
+/* ══════════════════════════════════════════════
+   LAYOUT DE DOS COLUMNAS (sticky sidebar)
+   ══════════════════════════════════════════════ */
+
+.layout-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  align-items: start;
+  min-height: 100vh;
+}
+
+/* ── Columna izquierda: Sobre Nosotros (scrollable) ── */
+.col-contenido {
+  /* deja que la columna ocupe todo el alto y haga scroll con la página */
+}
+
+/* ── Columna derecha: Registrar Avistamiento (sticky) ── */
+.col-sticky {
+  position: sticky;
+  top: 0;               /* se pega desde el borde superior del viewport */
+  height: 100vh;        /* ocupa toda la altura visible */
+  overflow-y: auto;     /* scroll interno si el contenido es largo */
+  border-left: 1px solid var(--border);
+  background: var(--bg-section);
+  /* Scrollbar dentro del panel sticky */
+  scrollbar-width: thin;
+  scrollbar-color: var(--azul-principal) var(--bg-section);
+}
+
+.col-sticky::-webkit-scrollbar { width: 4px; }
+.col-sticky::-webkit-scrollbar-track { background: var(--bg-section); }
+.col-sticky::-webkit-scrollbar-thumb { background: var(--azul-principal); border-radius: 2px; }
+
+/* ── El section de RegistrarAvistamiento dentro del sticky ── */
+.col-sticky .section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Responsive: colapsa a una columna en pantallas medianas ── */
+@media (max-width: 1024px) {
+  .layout-dos-columnas {
+    grid-template-columns: 1fr;
+  }
+
+  .col-sticky {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .col-sticky .section {
+    min-height: auto;
+  }
+}

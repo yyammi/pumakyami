@@ -22,12 +22,12 @@
   margin-bottom: 6px;
 }
 
-.footer__marca-paw { color: var(--amber); display: flex; }
+.footer__marca-paw { color: var(--celeste); display: flex; }
 
 .footer__divider {
   width: 48px;
   height: 2px;
-  background: var(--ochre);
+  background: var(--azul-principal);
   border-radius: 2px;
   margin: 4px 0;
 }

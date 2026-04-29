@@ -46,11 +46,11 @@
 
 /* Drag active */
 .upload-card--dragging {
-  border-color: var(--yellow-cta) !important;
-  background: rgba(241,196,15,0.06) !important;
+  border-color: var(--celeste) !important;
+  background: rgba(0,156,223,0.07) !important;
   box-shadow: var(--glow-yellow) !important;
 }
-.upload-card--dragging::before { transform: scaleX(1); background: var(--yellow-cta); }
+.upload-card--dragging::before { transform: scaleX(1); background: var(--celeste); }
 
 /* Icon circle */
 .upload-card__icon {
@@ -66,13 +66,13 @@
 }
 
 .upload-card--camara .upload-card__icon {
-  background: rgba(230,126,34,0.12);
-  color: var(--orange-cta);
+  background: rgba(207,102,27,0.14);
+  color: var(--naranja);
 }
 
 .upload-card--archivo .upload-card__icon {
-  background: rgba(241,196,15,0.1);
-  color: var(--yellow-cta);
+  background: rgba(0,156,223,0.12);
+  color: var(--celeste);
 }
 
 .upload-card:hover .upload-card__icon {
@@ -102,8 +102,8 @@
   position: absolute;
   inset: 0;
   border-radius: var(--r-lg);
-  background: rgba(241,196,15,0.12);
-  border: 2px dashed var(--yellow-cta);
+  background: rgba(0,156,223,0.10);
+  border: 2px dashed var(--celeste);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--yellow-cta);
+  color: var(--celeste);
   pointer-events: none;
 }
 
@@ -156,8 +156,8 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 3px solid rgba(204,160,0,0.2);
-  border-top-color: var(--yellow-cta);
+  border: 3px solid rgba(0,156,223,0.20);
+  border-top-color: var(--celeste);
   animation: spin 0.75s linear infinite;
 }
 

@@ -27,18 +27,18 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(15,12,7,1)    0%,
-    rgba(15,12,7,0.65) 40%,
-    rgba(15,12,7,0.15) 100%
+    rgba(6,12,20,1)    0%,
+    rgba(6,12,20,0.65) 40%,
+    rgba(6,12,20,0.15) 100%
   );
 }
 
-/* Ochre accent bar at the bottom */
+/* Brand accent bar at the bottom */
 .hero__accent-bar {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--ochre-deeper) 0%, var(--yellow-cta) 50%, var(--orange-cta) 100%);
+  background: linear-gradient(90deg, var(--azul-principal) 0%, var(--celeste) 55%, var(--naranja) 100%);
 }
 
 .hero__content {
@@ -58,7 +58,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--ochre);
+  background: var(--azul-principal);
   color: #fff;
   font-size: 0.68rem;
   font-weight: 800;
@@ -82,7 +82,7 @@
 
 .hero__title mark {
   background: none;
-  color: var(--yellow-cta);
+  color: var(--celeste);
 }
 
 .hero__sub {

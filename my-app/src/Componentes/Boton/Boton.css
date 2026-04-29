@@ -41,45 +41,45 @@
 
 /* ── Variantes de color ── */
 
-/* Amarillo — CTA primario */
+/* Celeste — CTA primario (subir imagen) */
 .btn--amarillo {
-  background: var(--yellow-cta);
-  color: #1a1200;
-  box-shadow: 0 4px 18px rgba(241,196,15,0.35);
+  background: var(--celeste);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0,156,223,0.35);
 }
 .btn--amarillo:hover {
-  box-shadow: 0 8px 28px rgba(241,196,15,0.50);
+  box-shadow: 0 8px 28px rgba(0,156,223,0.55);
 }
 
-/* Ocre — acción secundaria */
+/* Azul principal — acción secundaria */
 .btn--ocre {
-  background: var(--ochre);
+  background: var(--azul-principal);
   color: #fff;
-  box-shadow: 0 4px 18px rgba(204,160,0,0.30);
+  box-shadow: 0 4px 18px rgba(18,105,175,0.30);
 }
 .btn--ocre:hover {
-  box-shadow: 0 8px 28px rgba(204,160,0,0.45);
+  box-shadow: 0 8px 28px rgba(18,105,175,0.50);
 }
 
-/* Naranja — acción terciaria / cámara */
+/* Naranja — acción cámara */
 .btn--naranja {
-  background: var(--orange-cta);
+  background: var(--naranja);
   color: #fff;
-  box-shadow: 0 4px 18px rgba(230,126,34,0.30);
+  box-shadow: 0 4px 18px rgba(207,102,27,0.35);
 }
 .btn--naranja:hover {
-  box-shadow: 0 8px 28px rgba(230,126,34,0.45);
+  box-shadow: 0 8px 28px rgba(207,102,27,0.55);
 }
 
 /* Outline — acción sin relleno */
 .btn--outline {
   background: transparent;
-  color: var(--yellow-cta);
-  border: 2px solid var(--yellow-cta);
+  color: var(--celeste);
+  border: 2px solid var(--celeste);
 }
 .btn--outline:hover {
-  background: var(--yellow-cta);
-  color: #1a1200;
+  background: var(--celeste);
+  color: #fff;
   box-shadow: var(--glow-yellow);
 }
 

@@ -43,7 +43,7 @@
   display: block;
   font-size: 2rem;
   font-weight: 900;
-  color: var(--yellow-cta);
+  color: var(--celeste);
   line-height: 1;
   margin-bottom: 4px;
 }
@@ -70,13 +70,13 @@
   overflow: hidden;
 }
 
-/* Ochre top border accent */
+/* Blue top border accent */
 .sobre__card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--ochre) 0%, var(--yellow-cta) 100%);
+  background: linear-gradient(90deg, var(--azul-principal) 0%, var(--celeste) 100%);
 }
 
 .sobre__card-title {
@@ -84,7 +84,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--celeste);
   margin-bottom: 20px;
 }
 
@@ -107,7 +107,7 @@
 
 .sobre__card-list li::before {
   content: '▸';
-  color: var(--yellow-cta);
+  color: var(--celeste);
   font-size: 0.7rem;
   margin-top: 3px;
   flex-shrink: 0;
