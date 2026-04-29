@@ -18,7 +18,7 @@ function Navbar() {
         PumaKyami
       </div>
       <ul className="nav__links">
-        <li><a href="#quienes-somos">Nosotros</a></li>
+        <li><a href="#quienes-somos">Objetivo</a></li>
         <li>
           <a href="https://pumakawa.org/"  target="_blank" rel="noopener noreferrer">Pumakawa
           </a>
