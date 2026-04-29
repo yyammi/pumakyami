@@ -1,17 +1,5 @@
 import './Boton.css';
 
-/**
- * Boton — componente reutilizable
- *
- * Props:
- *  - variante: 'amarillo' | 'ocre' | 'naranja' | 'outline'  (default: 'ocre')
- *  - tamaño:   'chico' | 'grande'  (default: normal)
- *  - full:     boolean — ocupa todo el ancho
- *  - href:     si se pasa, renderiza un <a> en vez de <button>
- *  - onClick:  handler para <button>
- *  - type:     tipo de botón  (default: 'button')
- *  - children: contenido del botón
- */
 function Boton({
   variante = 'ocre',
   tamaño,

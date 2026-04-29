@@ -1,9 +1,3 @@
-/* ══════════════════════════════════════════
-   Boton — estilos inspirados en PUMAKAWA
-   Rectangular, texto en mayúsculas, bold,
-   colores sólidos terrosos / ocres.
-   ══════════════════════════════════════════ */
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -39,9 +33,6 @@
 .btn:hover   { filter: brightness(1.1); transform: translateY(-2px); }
 .btn:active  { filter: brightness(0.95); transform: translateY(0); }
 
-/* ── Variantes de color ── */
-
-/* Celeste — CTA primario (subir imagen) */
 .btn--amarillo {
   background: var(--celeste);
   color: #fff;
@@ -51,7 +42,6 @@
   box-shadow: 0 8px 28px rgba(0,156,223,0.55);
 }
 
-/* Azul principal — acción secundaria */
 .btn--ocre {
   background: var(--azul-principal);
   color: #fff;
@@ -61,7 +51,6 @@
   box-shadow: 0 8px 28px rgba(18,105,175,0.50);
 }
 
-/* Naranja — acción cámara */
 .btn--naranja {
   background: var(--naranja);
   color: #fff;
@@ -71,7 +60,6 @@
   box-shadow: 0 8px 28px rgba(207,102,27,0.55);
 }
 
-/* Outline — acción sin relleno */
 .btn--outline {
   background: transparent;
   color: var(--celeste);

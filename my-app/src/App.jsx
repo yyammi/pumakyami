@@ -2,11 +2,11 @@ import { useState } from 'react';
 import './index.css';
 import './App.css';
 
-import Navbar               from './Componentes/Navbar/Navbar';
-import Hero                 from './Componentes/Hero/Hero';
-import SobreNosotros        from './Componentes/SobreNosotros/SobreNosotros';
+import Navbar from './Componentes/Navbar/Navbar';
+import Hero from './Componentes/Hero/Hero';
+import SobreNosotros from './Componentes/SobreNosotros/SobreNosotros';
 import RegistrarAvistamiento from './Componentes/RegistrarAvistamiento/RegistrarAvistamiento';
-import Footer               from './Componentes/Footer/Footer';
+import Footer from './Componentes/Footer/Footer';
 import { ToastContainer, useToasts } from './Componentes/Toast/Toast';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       return;
     }
 
+    
     setCargando(true);
 
     // Simula el envío al servidor (reemplazar con fetch/axios real)
