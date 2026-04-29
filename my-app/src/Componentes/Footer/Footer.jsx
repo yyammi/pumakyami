@@ -21,7 +21,7 @@ function Footer() {
       <p className="footer__copy">© 2026 PumaKyami · Conservación del puma andino</p>
       <p className="footer__sub">Hecho con compromiso por la naturaleza.</p>
       <a
-        href="https://wa.me/549351786341"
+        href="https://wa.me/54351786341"
         target="_blank"
         rel="noopener noreferrer"
       >
