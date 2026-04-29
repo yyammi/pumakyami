@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ═══════════════════════════════════════════
+   PUMAKAWA-INSPIRED DESIGN TOKENS
+   ═══════════════════════════════════════════ */
+:root {
+  /* ── Paleta de color ── */
+  --ochre:          #cca000;        /* fondo principal PUMAKAWA */
+  --ochre-dark:     #a67c00;        /* botón secundario */
+  --ochre-deeper:   #7a5a00;        /* hover profundo */
+  --amber:          #e69138;        /* acento naranja/ámbar */
+  --amber-dark:     #c97820;
+  --yellow-cta:     #f1c40f;        /* CTA primario brillante */
+  --orange-cta:     #e67e22;        /* CTA terciario */
+
+  /* ── Fondos ── */
+  --bg-page:        #0f0c07;        /* negro cálido */
+  --bg-section:     #1a1507;        /* sección alternada oscura */
+  --bg-card:        #231c09;        /* cards */
+  --bg-card-hover:  #2e240d;
+  --bg-overlay:     rgba(15,12,7,0.88);
+
+  /* ── Texto ── */
+  --text-primary:   #ffffff;
+  --text-secondary: #e8dfc8;
+  --text-muted:     #9a8c6e;
+  --text-on-ochre:  #ffffff;
+
+  /* ── Bordes ── */
+  --border:         rgba(204,160,0,0.22);
+  --border-strong:  rgba(230,145,56,0.45);
+
+  /* ── Sombras ── */
+  --glow-amber:     0 0 32px rgba(230,145,56,0.28);
+  --glow-yellow:    0 0 24px rgba(241,196,15,0.35);
+  --shadow-card:    0 8px 40px rgba(0,0,0,0.6);
+
+  /* ── Radios ── */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   14px;
+  --r-pill: 100px;
+
+  /* ── Transición ── */
+  --ease: 0.28s cubic-bezier(0.4,0,0.2,1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { position: relative; }
+
+a { color: inherit; text-decoration: none; }
+
+img { display: block; max-width: 100%; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+/* ── Utilidades de texto ── */
+.text-ochre   { color: var(--ochre); }
+.text-amber   { color: var(--amber); }
+.text-yellow  { color: var(--yellow-cta); }
+.text-muted   { color: var(--text-muted); }
+
+/* ── Sección base ── */
+.section {
+  padding: 88px 0;
+}
+.section--alt {
+  background-color: var(--bg-section);
+  border-top:    1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ── Etiqueta de sección ── */
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: var(--yellow-cta);
+}
+
+.section-body {
+  font-size: 0.97rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 40px;
+}

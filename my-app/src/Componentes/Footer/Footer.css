@@ -1,0 +1,47 @@
+/* ── Footer ────────────────────────────────────────────── */
+.footer {
+  background: var(--bg-section);
+  border-top: 1px solid var(--border);
+  padding: 48px 28px 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__marca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.footer__marca-paw { color: var(--amber); display: flex; }
+
+.footer__divider {
+  width: 48px;
+  height: 2px;
+  background: var(--ochre);
+  border-radius: 2px;
+  margin: 4px 0;
+}
+
+.footer__copy {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.footer__sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  opacity: 0.55;
+  font-weight: 500;
+}
