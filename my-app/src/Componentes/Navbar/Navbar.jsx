@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="nav" role="navigation" aria-label="Navegación principal">
       <div className="nav__brand">
         <span className="nav__paw"><IconPaw /></span>
-        RedPumakawa
+        PumaRED
       </div>
       <ul className="nav__links">
         <li><a href="#quienes-somos">Objetivo</a></li>
