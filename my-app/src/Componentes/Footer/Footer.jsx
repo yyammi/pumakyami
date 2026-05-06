@@ -18,7 +18,7 @@ function Footer() {
         PumaKyami
       </div>
       <div className="footer__divider" />
-      <p className="footer__copy">© 2026 PumaKyami · Conservación del puma andino</p>
+      <p className="footer__copy">© 2026 REDPUMAKAWA · Conservación del puma andino</p>
       <p className="footer__sub">Hecho con compromiso por la naturaleza.</p>
       
       <a
