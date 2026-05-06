@@ -1,9 +1,8 @@
 /* ── SobreNosotros ───────────────────────────────────── */
 .sobre {
-  display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 72px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .sobre__text p {
@@ -62,11 +61,12 @@
   position: relative;
 }
 
+/* ── Card ¿Qué hacemos con tus fotos? (full-width) ── */
 .sobre__card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
-  padding: 32px;
+  padding: 32px 36px;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-card);
@@ -92,9 +92,9 @@
 
 .sobre__card-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px 24px;
 }
 
 .sobre__card-list li {

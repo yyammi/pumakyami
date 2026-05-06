@@ -4,7 +4,7 @@
 
 .layout-dos-columnas {
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 1fr 1fr;
   align-items: start;
   min-height: 100vh;
 }
@@ -17,26 +17,76 @@
 /* ── Columna derecha: Registrar Avistamiento (sticky) ── */
 .col-sticky {
   position: sticky;
-  top: 0;               /* se pega desde el borde superior del viewport */
-  height: 100vh;        /* ocupa toda la altura visible */
-  overflow-y: auto;     /* scroll interno si el contenido es largo */
-  border-left: 1px solid var(--border);
-  background: var(--bg-section);
-  box-shadow: -4px 0 20px rgba(18,105,175,0.07);
-  /* Scrollbar dentro del panel sticky */
+  top: 0;         
+  height: 100vh;    
+  overflow-y: auto;
+  background: #ffffff;
+
   scrollbar-width: thin;
-  scrollbar-color: var(--azul-principal) var(--bg-section);
+  scrollbar-color: var(--azul-principal) #ffffff;
 }
 
-.col-sticky::-webkit-scrollbar { width: 4px; }
-.col-sticky::-webkit-scrollbar-track { background: var(--bg-section); }
-.col-sticky::-webkit-scrollbar-thumb { background: var(--azul-principal); border-radius: 2px; }
+.col-sticky::-webkit-scrollbar { width: 5px; }
+.col-sticky::-webkit-scrollbar-track { background: #ffffff; }
+.col-sticky::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--azul-principal), var(--celeste));
+  border-radius: 3px;
+}
+
+/* Anular el fondo alternativo dentro del sticky */
+.col-sticky .section--alt {
+  background-color: #ffffff;
+  border: none;
+}
 
 /* ── El section de RegistrarAvistamiento dentro del sticky ── */
 .col-sticky .section {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 36px 40px;
+}
+
+.col-sticky .container {
+  padding: 0 8px;
+  width: 100%;
+}
+
+.col-sticky .section-eyebrow  {
+  margin-bottom: 8px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.col-sticky .section-title {
+  margin-bottom: 12px;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.col-sticky .section-body {
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.col-sticky .registrar-grid {
+  gap: 16px;
+  margin-bottom: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-sticky .upload-card__desc {
+  max-width: 100%;
+}
+
+.col-sticky .upload-privacidad {
+  padding: 14px 20px;
+  font-size: 0.78rem;
+  gap: 12px;
 }
 
 /* ── Responsive: colapsa a una columna en pantallas medianas ── */
